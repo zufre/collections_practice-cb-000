@@ -38,8 +38,10 @@ def sum_array(arr)
 end
 
 def add_s(arr)
-  arr.each_with_index.collect {|el, i| 
-  unless i == 1 
+  arr.each_with_index.collect {|el, i|
+  if  i == 1
+    el
+  else
     "#{el}s"
   end
   }
