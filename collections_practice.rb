@@ -32,3 +32,8 @@ def find_a(arr)
     word.start_with?("a")
   end
 end
+
+def sum_array(arr)
+  arr.inject {|sum, n| sum + n}
+  
+end
